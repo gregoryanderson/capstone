@@ -1,3 +1,36 @@
 h1 {
 	color: orchid;
+	font-family:Didot;
+	border: 2px solid;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	font-family:Didot;
+	border: 2px solid;
+}
+
+p {
+	text-align: center;
+	font-family: Avenir;
+}
+
+form{
+	text-align: center;
+	font-family:Didot;
+}
+
+ul{
+	text-align: center;
+	font-family: Avenir;
+	padding-left:0;   
+}
+
+ul li  {
+ 	list-style-position:inside
+}
+
+img {
+	border-width: 20px;
 }
