@@ -1,19 +1,33 @@
 h1 {
-	color: orchid;
+	color: black;
 	font-family:Didot;
 	border: 2px solid;
 	text-align: center;
+	height:45px;
+	width: 500px;
+	margin: auto;
+	padding:5px;
+	border-color: black;
+	background: white;
 }
 
 h2 {
 	text-align: center;
 	font-family:Didot;
 	border: 2px solid;
+	text-align: center;
+	height:30px;
+	width: 500px;
+	padding:5px;
+	margin: auto;
+	background:white;
 }
 
 p {
 	text-align: center;
 	font-family: Avenir;
+	font-size: 16;
+	font-weight:bold;
 }
 
 form{
@@ -31,6 +45,40 @@ ul li  {
  	list-style-position:inside
 }
 
-img {
-	border-width: 20px;
+.dog {
+	border:2px solid;
+	width: 200px;
+	margin:auto;
 }
+
+.lacroix{
+	border:2px solid;
+	width: 100px;
+	margin:auto;
+}
+
+body{
+	background: #C6FFDD;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+nav li{
+	display:inline-block;
+	border:2px solid;
+	padding: 10px;
+	background: white;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0 2px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
