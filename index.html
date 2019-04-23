@@ -5,10 +5,10 @@
 <body>
 <nav>
 	<ul>
+		<li><a href="index.html">Home</a></li>
 		<li><a href="about_me.html">The Birthday Boy</a></li>
 		<li><a href="location.html">Location</a></li>
 		<li><a href="registry.html">Registry</a></li>
-		<li><a href="index.html">Home</a></li>
 	</ul>
 </nav>
 <h1> Time to Celebrate! </h1>
@@ -23,6 +23,7 @@
 <h2> Cool, Greg, but what's on the Docket? </h2>
 
 <p> Glad you asked. Check out this sweet list of events:</p>
+
 <div class="plans">
 <div class="dog"><img src="buttermilk.png" width=180 height=180 align=middle/>
 </div>
@@ -34,19 +35,27 @@
 	<li> Lord of the Rings Movie Marathon</li>
 	<li> Play Nightcrawlers</li>
 	<li> Eat Milksteak</li>
-	<li> Hold-your-breath Contest!</li>
+	<li> Hold-Your-Breath Contest!</li>
 	<li> Drag Queen Bingo</li>
 	<li> Dramatic Reenactment of My Birth</li>
-	<li> CLowns, Clowns, and More CLowns!</li>
+	<li> Clowns, Clowns, and More Clowns!</li>
 	<li> <i> So Much More!</i></li>
 </ul>
 <div class="lacroix"><img src="lacroix.png" width=100 height=175 align=middle/></div>
 <p><i> Pamplemousse La Croix</i></p>
 </div>
+
 <p>
 But I also want to hear some of your suggestions!<br />
 Help me decide what other event we should have planned!<br /> 
-
+<br />
+What event?
+<select name="event">
+   <option value="one">Have a Taco Safari</option>
+       <option value="two">Christopher Walken Impressions</option>
+       <option value="three">Yeet Yeet Yeet</option>
+     </select>
+<br />
 </p>
 <h2> Will we even have time for presents?!</h2>
 
@@ -67,4 +76,48 @@ As a matter of fact, here are a couple of helpful links for ideas on what to get
 </form>
 <form> Email: <input type="text" name="email" /></form>
 </p>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<p> Hurry up because there is only</p>
+<p id="demo"></p>
+<p> left until the party!</p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("July 2, 2019").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + " days" 
+	//+ hours + "h "+ minutes + "m " + seconds + "s ";
+	//I blacked that code out
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+
+
+
+
 </body>

@@ -75,6 +75,12 @@ ul li  {
 	font-family: Avenir;
 }
 
+.nina{
+	border:2px solid;
+	width: 200px;
+	margin:auto;
+}
+
 body{
 	background: #43C6AC;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
