@@ -134,3 +134,8 @@ a:active {
    width: 268px;
 }
 
+.eggs{
+	border:2px solid;
+	width: 350px;
+	margin:auto;
+}
